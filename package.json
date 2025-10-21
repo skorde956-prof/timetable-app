@@ -1,0 +1,39 @@
+{
+  "name": "mindease-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "next-auth": "5.0.0-beta.20",
+    "@prisma/client": "5.19.1",
+    "zod": "3.23.8",
+    "@tanstack/react-query": "5.56.2",
+    "lucide-react": "0.460.0",
+    "class-variance-authority": "0.7.0",
+    "clsx": "2.1.1",
+    "tailwind-merge": "2.5.2"
+  },
+  "devDependencies": {
+    "typescript": "5.6.2",
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.75",
+    "@types/react-dom": "18.2.25",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "prisma": "5.19.1",
+    "tailwindcss": "3.4.10",
+    "postcss": "8.4.47",
+    "autoprefixer": "10.4.20"
+  }
+}
