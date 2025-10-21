@@ -3,4 +3,5 @@
 @tailwind utilities;
 
 :root { --radius: 1rem; }
-body { @apply bg-muted text-foreground; }
+/* Modern, lightweight background */`nbody { @apply text-foreground antialiased; }`nbody::before {`n  content: "";`n  position: fixed;`n  inset: 0;`n  z-index: -2;`n  background:`n    radial-gradient(1200px 600px at 80% -10%, rgba(59,130,246,0.10), transparent 60%),`n    radial-gradient(900px 500px at -10% 10%, rgba(99,102,241,0.12), transparent 55%),`n    linear-gradient(180deg, #fafafa 0%, #f6f7fb 40%, #f3f4f6 100%);`n}`n`n/* Glassy surfaces */`n.surface-glass { @apply bg-white/80 backdrop-blur-md border; }`n`n/* Smooth theme transitions */`n.theme-transition { transition: background-color .2s ease, color .2s ease, border-color .2s ease, box-shadow .2s ease; }
+

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="grid gap-8">
       <section className="text-center space-y-4">
-        <h1 className="text-4xl md:text-5xl font-bold">MindEase</h1>
+        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-sky-600 to-indigo-600 bg-clip-text text-transparent">MindEase</h1>
         <p className="text-muted-foreground text-lg">AI micro-therapy. Safe communities. Uplifting group care.</p>
         <div className="flex items-center justify-center gap-3">
           <Link href="/dashboard"><Button>Open App</Button></Link>
@@ -29,3 +29,4 @@ export default function Home() {
     </div>
   );
 }
+
