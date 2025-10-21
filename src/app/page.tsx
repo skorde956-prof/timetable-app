@@ -10,7 +10,7 @@ export default function Home() {
         <p className="text-muted-foreground text-lg">AI micro-therapy. Safe communities. Uplifting group care.</p>
         <div className="flex items-center justify-center gap-3">
           <Link href="/dashboard"><Button>Open App</Button></Link>
-          <Link href="https://example.com"><Button variant="secondary">Learn More</Button></Link>
+          <Link href="/login"><Button variant="secondary">Sign in</Button></Link>
         </div>
       </section>
 

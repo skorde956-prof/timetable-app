@@ -1,8 +1,13 @@
+import { auth } from "next-auth";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { redirect } from "next/navigation";
 
-export default function Dashboard() {
+export default async function Dashboard() {
+  const session = await auth();
+  if (!session?.user) redirect("/login?callbackUrl=/dashboard");
+
   return (
     <div className="grid gap-6">
       <h2 className="text-2xl font-semibold">Welcome back 👋</h2>

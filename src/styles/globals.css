@@ -2,10 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --radius: 1rem;
-}
-
-body {
-  @apply bg-muted text-foreground;
-}
+:root { --radius: 1rem; }
+body { @apply bg-muted text-foreground; }
